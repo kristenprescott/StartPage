@@ -1,3 +1,9 @@
+.Welcome {
+  border: 1px solid #f9f6f2;
+
+  text-align: center;
+}
+
 /*
 .Welcome {
   display: flex;

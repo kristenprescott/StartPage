@@ -1,0 +1,15 @@
+.Left {
+  border: 1px solid #f9f6f2;
+  /* background-color: tomato; */
+
+  width: 35%;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+/*
+.Left {
+  display: flex;
+  flex-direction: column;
+}
+*/

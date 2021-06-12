@@ -32,11 +32,11 @@ export default function Weather() {
   // };
 
   return (
-    <div className="Component Weather">
+    <div className="Weather">
       {weatherData && weatherData ? (
         <div className="weather-container">
           {/* <div>{weatherData.name}</div> */}
-          <div>
+          <div className="weather-simple">
             <div>{weatherData.weather[0].description}</div>
             <span>
               <img
@@ -46,14 +46,14 @@ export default function Weather() {
           </div>
 
           <div>
-            <div>temp: {Math.round(weatherData.main.temp)}&#176;</div>
-            <div>
+            {/* <div>temp: {Math.round(weatherData.main.temp)}&#176;</div> */}
+            {/* <div>
               feels like: {Math.round(weatherData.main.feels_like)}&#176;
-            </div>
+            </div> */}
             <div>low: {Math.round(weatherData.main.temp_min)}&#176;</div>
             <div>high: {Math.round(weatherData.main.temp_max)}&#176;</div>
             <div>humidity: {weatherData.main.humidity}%</div>
-            <div>
+            {/* <div>
               sunrise:{" "}
               <span>
                 {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString(
@@ -64,7 +64,7 @@ export default function Weather() {
                   }
                 )}
               </span>
-            </div>
+            </div> */}
             <div>
               sunset:{" "}
               <span>

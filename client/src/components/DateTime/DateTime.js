@@ -5,6 +5,8 @@ export default function DateTime() {
   // const [greeting, setGreeting] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  const [hrs, setHrs] = useState("");
+  const [mins, setMins] = useState("");
 
   useEffect(() => {
     const updateDateTime = () => {
@@ -37,6 +39,9 @@ export default function DateTime() {
       // setGreeting(greetSuffix);
       setDate(today);
       setTime(time);
+
+      setHrs(hours);
+      setMins(minutes);
       setTimeout(updateDateTime, 1000);
     };
     // console.log(greeting);
@@ -48,7 +53,12 @@ export default function DateTime() {
       {/* <div>Good {greeting}, Kristen.</div> */}
       <div>Welcome, Kristen.</div>
       <div>Today is {date}</div>
-      <div>{time}</div>
+      {/* <div>{time}</div> */}
+      <div>
+        {hrs}
+        <span>:</span>
+        {mins}
+      </div>
     </div>
   );
 }
