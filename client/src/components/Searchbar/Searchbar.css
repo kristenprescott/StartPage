@@ -1,0 +1,33 @@
+.Searchbar {
+  border: 1px solid #f9f6f2;
+}
+
+.Searchbar > input[type="text"] {
+  height: 4vmin;
+  width: 40vmin;
+  border: none;
+  background-color: transparent;
+  color: #f9f6f2;
+  /* border-bottom: 1px solid #f9f6f2; */
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  cursor: default;
+}
+
+/*
+.Searchbar {
+  border: 1px solid gainsboro;
+  padding: 0.5rem;
+}
+
+.Searchbar > input[type="text"] {
+  height: 4vmin;
+  width: 40vmin;
+  border: none;
+  background-color: transparent;
+  color: #f9f6f2;
+  border-bottom: 1px solid #f9f6f2;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+}
+*/

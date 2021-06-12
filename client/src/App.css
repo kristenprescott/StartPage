@@ -1,0 +1,16 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  color: #f9f6f2;
+  background-color: #151010;
+
+  border: 1px solid #f9f6f2;
+}
+
+/*
+.Component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
