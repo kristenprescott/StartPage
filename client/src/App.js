@@ -1,6 +1,4 @@
 import "./App.css";
-import Searchbar from "./components/Searchbar/Searchbar";
-import Welcome from "./cards/Welcome/Welcome";
 import textCursor from "./assets/cursors/Cyan_Text.cur";
 import helpCursor from "./assets/cursors/Cyan_Help.cur";
 import linkCursor from "./assets/cursors/Cyan_Link.cur";
@@ -10,10 +8,11 @@ import vertResizeCursor from "./assets/cursors/Cyan_Vertical_Resize.cur";
 import horResizeCursor from "./assets/cursors/Cyan_Horizontal_Resize.cur";
 import diagResizeCursor1 from "./assets/cursors/Cyan_Diagonal_Resize_1.cur";
 import diagResizeCursor2 from "./assets/cursors/Cyan_Diagonal_Resize_2.cur";
-
+import Welcome from "./cards/Welcome/Welcome";
+import cursor from "./assets/cursors/Cyan_Normal.cur";
+import Searchbar from "./components/Searchbar/Searchbar";
 import Left from "./cards/Left/Left";
 import Right from "./cards/Right/Right";
-import cursor from "./assets/cursors/Cyan_Normal.cur";
 
 function App() {
   return (

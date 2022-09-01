@@ -12,7 +12,6 @@ export default function Searchbar() {
 
   const handleBlur = (e) => {
     e.target.value = "";
-    // e.target.placeholder = "search...";
   };
 
   const handleChange = (e) => {
@@ -35,7 +34,7 @@ export default function Searchbar() {
           autoComplete="off"
           type="text"
           id="searchbar"
-          // placeholder="search..."
+          placeholder="seek..."
           value={searchTerm}
           onChange={handleChange}
           onFocus={handleFocus}
