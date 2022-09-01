@@ -7,25 +7,48 @@ const apiUrl = process.env.REACT_APP_API_URL;
 export default function Weather() {
   // const [isOpen, setIsOpen] = useState(false);
   const [weatherData, setWeatherData] = useState(null);
+  const [errorMsg, setErrorMsg] = useState("");
 
   const fetchData = async () => {
     const result = await fetch(
       `${apiUrl}/weather?zip=30032&appid=${appId}&units=imperial`
     ).then((res) => res.json());
 
-    setWeatherData(result);
+    if (result.message.length) {
+      setErrorMsg(result.message);
+      setWeatherData(null);
+
+      return;
+    } else {
+      setWeatherData(result);
+    }
+    console.log("weatherData: ", weatherData);
   };
 
   useEffect(() => {
     fetchData();
-
-    // console.log("weatherData: ", weatherData);
   }, []);
 
   // const handleClick = () => {
   //   console.log("clicked.");
   //   setIsOpen(!isOpen);
   // };
+
+  const errorResponse = (
+    <p style={{ fontSize: "15px" }}>
+      <span style={{ color: "tomato", fontWeight: 900, padding: 10 }}>
+        Error
+      </span>{" "}
+      fetching data:
+      <br />
+      <br />
+      <p style={{ padding: 10, fontSize: "12px" }}>{errorMsg}</p>
+    </p>
+  );
+
+  if (errorMsg && errorMsg.length) {
+    return errorResponse;
+  }
 
   return (
     <div className="Weather">
@@ -84,9 +107,7 @@ export default function Weather() {
             </div>
           </div>
         </div>
-      ) : (
-        <div>can't fetch weather.</div>
-      )}
+      ) : null}
 
       {/* <div id="buttons">
         {isOpen ? (
