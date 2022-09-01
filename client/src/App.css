@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   color: #f9f6f2;
-  background-color: #151010;
+  background-color: #09060e;
 
   display: flex;
   flex-direction: column;
@@ -20,8 +20,8 @@ div.container {
   margin: 0px 2.5rem;
   padding: 0.5rem 0px;
   border: 0.3vmin solid #f9f6f2;
-  border-bottom: 4px solid #151010;
-  border-right: 4px solid #151010;
+  border-bottom: 4px solid #09060e;
+  border-right: 4px solid #09060e;
 
   box-shadow: 0.8vmin 0.8vmin 0px 0px #f9f6f2;
 }

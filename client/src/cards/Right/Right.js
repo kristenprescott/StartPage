@@ -21,6 +21,7 @@ export default function Right() {
         <div className="LeftRight">
           <div className="icons">
             <img
+              alt="icon"
               onClick={() => {
                 window.open("https://mail.google.com/mail/u/0/#inbox");
               }}
@@ -29,6 +30,7 @@ export default function Right() {
             />
 
             <img
+              alt="icon"
               onClick={() => {
                 window.open("https://old.reddit.com/");
               }}
@@ -37,14 +39,17 @@ export default function Right() {
             />
 
             <img
+              alt="icon"
               onClick={() => {
-                window.open("https://passwords.google.com/");
+                window.open("https://lastpass.com/?ac=1&lpnorefresh=1");
+                // window.open("https://passwords.google.com/");
               }}
               style={{ cursor: `url(${linkCur}),auto` }}
               src={keyIcon}
             />
 
             {/* <img
+            alt="icon"
               onClick={() => {
                 window.open("");
               }}
@@ -53,6 +58,7 @@ export default function Right() {
             /> */}
 
             {/* <img
+            alt="icon"
               onClick={() => {
                 window.open("chrome://bookmarks/");
               }}
@@ -61,6 +67,7 @@ export default function Right() {
             /> */}
 
             {/* <img
+            alt="icon"
               onClick={() => {
                 window.open("");
               }}
@@ -69,6 +76,7 @@ export default function Right() {
             /> */}
 
             <img
+              alt="icon"
               onClick={() => {
                 window.open(
                   "https://github.com/kristenprescott?tab=repositories"
@@ -82,34 +90,40 @@ export default function Right() {
             <hr></hr>
             <br></br>
 
-            <a
-              onClick={() => {
-                window.open("https://kpresfolio.herokuapp.com/");
-              }}
+            {/* <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://kpresfolio.herokuapp.com/"
               style={{ cursor: `url(${linkCur}),auto` }}
-              src="https://kpresfolio.herokuapp.com/"
             >
               Folio
-            </a>
+            </a> */}
 
             <a
-              onClick={() => {
-                window.open("https://virtual-asst.herokuapp.com/");
-              }}
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://virtual-asst.herokuapp.com/"
               style={{ cursor: `url(${linkCur}),auto` }}
-              src="https://virtual-asst.herokuapp.com/"
             >
-              IRIS
+              <span style={{ fontSize: "12px" }}>IRIS</span>
             </a>
 
-            <a
-              onClick={() => {
-                window.open("https://www.linkedin.com/in/kristen-prescott/");
-              }}
+            {/* <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/kristen-prescott/"
               style={{ cursor: `url(${linkCur}),auto` }}
-              src="https://www.linkedin.com/in/kristen-prescott/"
             >
               LinkedIn
+            </a> */}
+
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/kristenprescott"
+              style={{ cursor: `url(${linkCur}),auto` }}
+            >
+              <span style={{ fontSize: "12px" }}>Github</span>
             </a>
           </div>
         </div>
