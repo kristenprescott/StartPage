@@ -1,7 +1,7 @@
 import "./Weather.css";
 import { useState, useEffect } from "react";
 
-const appId = process.env.REACT_APP_APP_URL;
+const appId = process.env.REACT_APP_API_KEY;
 const apiUrl = process.env.REACT_APP_API_URL;
 
 export default function Weather() {
@@ -17,12 +17,10 @@ export default function Weather() {
     if (result.message.length) {
       setErrorMsg(result.message);
       setWeatherData(null);
-
-      return;
     } else {
       setWeatherData(result);
     }
-    console.log("weatherData: ", weatherData);
+    // console.log("weatherData: ", weatherData);
   };
 
   useEffect(() => {
@@ -107,7 +105,9 @@ export default function Weather() {
             </div>
           </div>
         </div>
-      ) : null}
+      ) : (
+        "oops"
+      )}
 
       {/* <div id="buttons">
         {isOpen ? (
